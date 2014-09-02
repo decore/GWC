@@ -1,0 +1,111 @@
+---
+layout: "cabinet"
+title: "Оплаченные счета"
+---
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<%= partial "cabinet-menu" %>
+		</div>
+		<div class="col-md-9">
+			<div class="title clearfix">
+				<h3>Оплаченные счета</h3>
+				<a href="cabinet-invoice-create.html" type="button" class="btn btn-success btn-lg pull-right">
+				<i class="icon-plus"></i> Создать счет</a>
+			</div>
+			<table class="table table-hover table-bordered table-striped table-request table-responsive">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Название</th>
+						<th>Дата создания</th>
+						<th>Статус</th>
+						<th>Действие</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>1</td>
+						<td>Счет 128</td>
+						<td>8 / 16 / 2013</td>
+						<td>
+							Комплектация заказа
+						</td>
+						<td>
+							<button type="button" class="btn btn-primary">
+								<i class="icon-folder-open-alt icon-large" data-toggle="tooltip" title="" data-original-title="Подробнее"></i>
+							</button>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>2</td>
+						<td>Счет 256</td>
+						<td>16 / 32 / 2013</td>
+						<td>
+							Отправлен
+						</td>
+						<td>
+							<button type="button" class="btn btn-primary">
+								<i class="icon-folder-open-alt icon-large" data-toggle="tooltip" title="" data-original-title="Подробнее"></i>
+							</button>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>3</td>
+						<td>Счет 128</td>
+						<td>8 / 16 / 2013</td>
+						<td>
+							Ожидает получения
+						</td>
+						<td>
+							<button type="button" class="btn btn-primary">
+								<i class="icon-folder-open-alt icon-large" data-toggle="tooltip" title="" data-original-title="Подробнее"></i>
+							</button>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>4</td>
+						<td>Счет 256</td>
+						<td>16 / 32 / 2013</td>
+						<td>
+							Отправлен
+						</td>
+						<td>
+							<button type="button" class="btn btn-primary">
+								<i class="icon-folder-open-alt icon-large" data-toggle="tooltip" title="" data-original-title="Подробнее"></i>
+							</button>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>5</td>
+						<td>Счет 256</td>
+						<td>16 / 32 / 2013</td>
+						<td>
+							Отправлен
+						</td>
+						<td>
+							<button type="button" class="btn btn-primary">
+								<i class="icon-folder-open-alt icon-large" data-toggle="tooltip" title="" data-original-title="Подробнее"></i>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<ul class="pagination pagination-sm">
+								<li><a href="#">«</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+						</td>
+					</tr>							
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</div>

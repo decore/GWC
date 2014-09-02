@@ -1,0 +1,167 @@
+---
+layout: "cabinet"
+title: "СПИСОК ТОВАРОВ КАТЕГОРИИ"
+---
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<%= partial "cabinet-menu" %>
+		</div>
+		<div class="col-md-9">
+			<div class="title clearfix">	
+				<h3>Название категории</h3>
+				<a href="cabinet-request-create.html" class="btn btn-primary pull-right">
+					<i class="icon-arrow-left"></i> К списку категорий
+				</a>
+			</div>
+			<div class="alert alert-info alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				<strong>Обратите внимание</strong>, цена товара указана с учетом НДС.
+			</div>
+			<table class="table table-request table-bordered table-hover table-striped table-responsive">
+				<thead>
+					<tr>
+						<th>Название товара</th>
+						<th class="price">Цена</th>
+						<th>Количество</th>
+						<th>Всего</th>
+						<th>Действие</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Товар 1</td>
+						<td>512 <span class="b-rub">Р</span></td>
+						<td class="td-spinner">
+							<div class="spinner" data-mod="5">
+								<input type="text" class="input-mini spinner-input form-control">
+								<div class="spinner-buttons	btn-group-xs btn-group-vertical">
+									<button type="button" class="btn spinner-up">
+										<i class="icon-chevron-up"></i>
+									</button>
+									<button type="button" class="btn spinner-down">
+										<i class="icon-chevron-down"></i>
+									</button>
+								</div>
+							</div>
+						</td>
+						<td>2 <span class="b-rub">Р</span></td>
+						<td>
+							<button type="button" class="btn btn-success add">
+								<i class="icon-plus icon-large" data-toggle="tooltip" title="" data-original-title="Добавить"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Товар 2</td>
+						<td>1024 <span class="b-rub">Р</span></td>
+						<td class="td-spinner">
+							<div class="spinner" data-mod="4">
+								<input type="text" class="input-mini spinner-input form-control">
+								<div class="spinner-buttons	btn-group-xs btn-group-vertical">
+									<button type="button" class="btn spinner-up">
+										<i class="icon-chevron-up"></i>
+									</button>
+									<button type="button" class="btn spinner-down">
+										<i class="icon-chevron-down"></i>
+									</button>
+								</div>
+							</div>
+						</td>
+						<td>2 <span class="b-rub">Р</span></td>
+						<td>
+							<button type="button" class="btn btn-success add">
+								<i class="icon-plus icon-large" data-toggle="tooltip" title="" data-original-title="Добавить"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Товар 3</td>
+						<td>512 <span class="b-rub">Р</span></td>
+						<td class="td-spinner">
+							<div class="spinner" data-mod="3">
+								<input type="text" class="input-mini spinner-input form-control">
+								<div class="spinner-buttons	btn-group-xs btn-group-vertical">
+									<button type="button" class="btn spinner-up">
+										<i class="icon-chevron-up"></i>
+									</button>
+									<button type="button" class="btn spinner-down">
+										<i class="icon-chevron-down"></i>
+									</button>
+								</div>
+							</div>
+						</td>
+						<td>2 <span class="b-rub">Р</span></td>
+						<td>
+							<button type="button" class="btn btn-success add">
+								<i class="icon-plus icon-large" data-toggle="tooltip" title="" data-original-title="Добавить"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Товар 4</td>
+						<td>1024 <span class="b-rub">Р</span></td>
+						<td class="td-spinner">
+							<div class="spinner" data-mod="2">
+								<input type="text" class="input-mini spinner-input form-control">
+								<div class="spinner-buttons	btn-group-xs btn-group-vertical">
+									<button type="button" class="btn spinner-up">
+										<i class="icon-chevron-up"></i>
+									</button>
+									<button type="button" class="btn spinner-down">
+										<i class="icon-chevron-down"></i>
+									</button>
+								</div>
+							</div>
+						</td>
+						<td>2 <span class="b-rub">Р</span></td>
+						<td>
+							<button type="button" class="btn btn-success add">
+								<i class="icon-plus icon-large" data-toggle="tooltip" title="" data-original-title="Добавить"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>Товар 5</td>
+						<td>1024 <span class="b-rub">Р</span></td>
+						<td class="td-spinner">
+							<div class="spinner" data-mod="8">
+								<input type="text" class="input-mini spinner-input form-control">
+								<div class="spinner-buttons	btn-group-xs btn-group-vertical">
+									<button type="button" class="btn spinner-up">
+										<i class="icon-chevron-up"></i>
+									</button>
+									<button type="button" class="btn spinner-down">
+										<i class="icon-chevron-down"></i>
+									</button>
+								</div>
+							</div>
+						</td>
+						<td>2 <span class="b-rub">Р</span></td>
+						<td>
+							<button type="button" class="btn btn-success add">
+								<i class="icon-plus icon-large" data-toggle="tooltip" title="" data-original-title="Добавить"></i>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<ul class="pagination pagination-sm">
+								<li><a href="#">«</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+						</td>
+					</tr>							
+				</tfoot>
+			</table>
+			<a href="cabinet-request-create.html" class="btn btn-primary mt11 pull-right"><i class="icon-arrow-left"></i> К списку категорий</a>
+		</div>
+	</div>
+</div>

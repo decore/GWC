@@ -1,0 +1,116 @@
+---
+layout: "cabinet"
+title: "История заказов"
+---
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<%= partial "cabinet-menu" %>
+		</div>
+		<div class="col-md-9">
+			<div class="title clearfix">
+				<h3>История счетов</h3>
+			</div>
+			<br>
+			<table class="table table-request-4 table-hover table-bordered table-striped table-responsive">
+				<thead>
+					<tr colspan="5">
+						<select class="form-control">
+							<option>За последний месяц</option>
+							<option>За квартал</option>
+						</select>
+					</tr>
+					<tr>
+						<th>#</th>
+						<th>Название заказа</th>
+						<th>Дата создания</th>
+						<th>Статус</th>
+						<th>Действие</th>
+					</tr>
+				</thead>		
+				<tbody>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>1</td>
+						<td>Заказ 32</td>
+						<td>
+							13/12/2013
+							<span class="label label-warning"><i class="icon-time"></i> 3 дня</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>2</td>
+						<td>Заказ 33</td>
+						<td>
+							13/12/2013
+							<span class="label label-danger"><i class="icon-time"></i> 1 день</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>3</td>
+						<td>Заказ 33</td>
+						<td>
+							13/12/2013
+							<span class="label label-warning"><i class="icon-time"></i> 3 дня</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>4</td>
+						<td>Заказ 34</td>
+						<td>
+							13/12/2013
+							<span class="label label-danger"><i class="icon-time"></i> 1 день</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>5</td>
+						<td>Заказ 35</td>
+						<td>
+							13/12/2013
+							<span class="label label-danger"><i class="icon-time"></i> 1 день</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<ul class="pagination pagination-sm pull-right">
+								<li><a href="#">«</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+						</td>
+					</tr>							
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</div>

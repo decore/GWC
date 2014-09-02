@@ -1,0 +1,103 @@
+---
+layout: "cabinet"
+title: "Список счетов"
+---
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<%= partial "cabinet-menu" %>
+		</div>
+		<div class="col-md-9">
+			<div class="title clearfix">	
+				<h3>Список счетов</h3>
+				<a href="cabinet-invoice-create.html" class="btn btn-success btn-lg pull-right"><i class="icon-plus"></i> Создать счет</a>
+			</div>
+			<table class="table table-hover table-bordered table-striped table-responsive">
+				<thead>
+					<tr>
+						<th colspan="4">
+							<div class="input-group col-md-12">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="icon-search"></i></button>
+								</span>
+								<input type="text" class="form-control">
+							</div>
+						</th>
+						<th width="300">
+							<select class="form-control">
+								<option>По дате</option>
+								<option>По номеру</option>
+							</select>
+						</th>
+					</tr>
+					<tr>
+						<th>№</th>
+						<th>Название</th>
+						<th>Дата создания</th>
+						<th>Статус</th>
+						<th>Действия</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>1</td>
+						<td>1156</td>
+						<td>
+							16 / 16 / 2013
+							<span class="label label-danger"><i class="icon-time"></i> <strong>1</strong> день</span>
+						</td>
+						<td>Не оплачено</td>
+						<td>
+							<div class="btn-group">
+								<button type="button" class="btn btn-success">
+									<i class="icon-usd icon-large" data-toggle="tooltip" title="" data-original-title="Оплатить"></i>
+								</button>
+								<button type="button" class="btn btn-primary view">
+									<i class="icon-eye-open icon-large" data-toggle="tooltip" title="" data-original-title="Просмотр"></i>
+								</button>
+								
+								<a href="cabinet-request-modify.html" type="button" class="btn btn-warning modify">
+									<i class="icon-edit icon-large" data-toggle="tooltip" title="" data-original-title="Изменить"></i>
+								</a>
+								<button type="button" class="btn btn-danger remove">
+									<i class="icon-remove icon-large" data-toggle="tooltip" title="" data-original-title="Удалить"></i>
+								</button>
+							</div>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>2</td>
+						<td>1157</td>
+						<td>
+							8 / 16 / 2013
+							<span class="label label-warning"><i class="icon-time"></i> <strong>3</strong> дня</span>
+						</td>
+						<td>Оплачен, идет отгрузка</td>
+						<td>
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary view">
+									<i class="icon-eye-open icon-large" data-toggle="tooltip" title="" data-original-title="Просмотр"></i>
+								</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td colspan="5">
+							<ul class="pagination pagination-sm pull-right">
+								<li><a href="#">«</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+						</td>
+					</tr>							
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</div>

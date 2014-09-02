@@ -1,0 +1,151 @@
+---
+layout: "cabinet"
+title: "Неоплаченные платежи"
+---
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<%= partial "cabinet-menu" %>
+		</div>
+		<div class="col-md-9">
+			<div class="title clearfix">
+				<h3>Неоплаченные счета</h3>
+				<a href="cabinet-invoice-create.html" type="button" class="btn btn-success btn-lg pull-right">
+				<i class="icon-plus"></i> Создать счет</a>
+			</div>
+
+			<table class="table table-request table-bordered table-hover table-striped table-responsive">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Название</th>
+						<th>Дата создания</th>
+						<th>Действие</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>1</td>
+						<td>Заявка 512</td>
+						<td>
+							8 / 16 / 2013
+							<span class="label label-warning"><i class="icon-time"></i> <strong>3</strong> дня</span>
+						</td>
+						<td>
+							<div class="btn-group">
+								<button type="button" class="btn btn-success play">
+									<i class="icon-file-alt icon-large" data-toggle="tooltip" title="" data-original-title="Провести"></i>
+								</button>
+								<button type="button" class="btn btn-warning modify">
+									<i class="icon-edit icon-large" data-toggle="tooltip" title="" data-original-title="Изменить"></i>
+								</button>
+								<button type="button" class="btn btn-danger remove">
+									<i class="icon-remove icon-large" data-toggle="tooltip" title="" data-original-title="Удалить"></i>
+								</button>
+							</div>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>2</td>
+						<td>Заявка 1024</td>
+						<td>
+							16 / 16 / 2013
+							<span class="label label-danger"><i class="icon-time"></i> <strong>1</strong> день</span>
+						</td>
+						<td>
+							<div class="btn-group">
+								<button type="button" class="btn btn-success play">
+									<i class="icon-file-alt icon-large" data-toggle="tooltip" title="" data-original-title="Провести"></i>
+								</button>
+								<button type="button" class="btn btn-warning modify">
+									<i class="icon-edit icon-large" data-toggle="tooltip" title="" data-original-title="Изменить"></i>
+								</button>
+								<button type="button" class="btn btn-danger remove">
+									<i class="icon-remove icon-large" data-toggle="tooltip" title="" data-original-title="Удалить"></i>
+								</button>
+							</div>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>3</td>
+						<td>Заявка 512</td>
+						<td>
+							8 / 16 / 2013
+							<span class="label label-warning"><i class="icon-time"></i> <strong>3</strong> дня</span>
+						</td>
+						<td>
+							<div class="btn-group">
+								<button type="button" class="btn btn-success play">
+									<i class="icon-file-alt icon-large" data-toggle="tooltip" title="" data-original-title="Провести"></i>
+								</button>
+								<button type="button" class="btn btn-warning modify">
+									<i class="icon-edit icon-large" data-toggle="tooltip" title="" data-original-title="Изменить"></i>
+								</button>
+								<button type="button" class="btn btn-danger remove">
+									<i class="icon-remove icon-large" data-toggle="tooltip" title="" data-original-title="Удалить"></i>
+								</button>
+							</div>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>4</td>
+						<td>Заявка 1024</td>
+						<td>
+							16 / 16 / 2013
+							<span class="label label-danger"><i class="icon-time"></i> <strong>1</strong> день</span>
+						</td>
+						<td>
+							<div class="btn-group">
+								<button type="button" class="btn btn-success play">
+									<i class="icon-file-alt icon-large" data-toggle="tooltip" title="" data-original-title="Провести"></i>
+								</button>
+								<button type="button" class="btn btn-warning modify">
+									<i class="icon-edit icon-large" data-toggle="tooltip" title="" data-original-title="Изменить"></i>
+								</button>
+								<button type="button" class="btn btn-danger remove">
+									<i class="icon-remove icon-large" data-toggle="tooltip" title="" data-original-title="Удалить"></i>
+								</button>
+							</div>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>5</td>
+						<td>Заявка 1024</td>
+						<td>
+							16 / 16 / 2013
+							<span class="label label-danger"><i class="icon-time"></i> <strong>1</strong> день</span>
+						</td>
+						<td>
+							<div class="btn-group">
+								<button type="button" class="btn btn-success play">
+									<i class="icon-file-alt icon-large" data-toggle="tooltip" title="" data-original-title="Провести"></i>
+								</button>
+								<button type="button" class="btn btn-warning modify">
+									<i class="icon-edit icon-large" data-toggle="tooltip" title="" data-original-title="Изменить"></i>
+								</button>
+								<button type="button" class="btn btn-danger remove">
+									<i class="icon-remove icon-large" data-toggle="tooltip" title="" data-original-title="Удалить"></i>
+								</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<ul class="pagination pagination-sm">
+								<li><a href="#">«</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+						</td>
+					</tr>							
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</div>

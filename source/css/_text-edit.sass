@@ -1,0 +1,16 @@
+textarea.comment
+	margin-top: 10px
+	width: 100%
+	height: 40px
+	font-size: 12px
+	+placeholder(#999)
+	font-style: normal
+	&.comment-blur
+		border: none
+		cursor: pointer
+		box-shadow: 0 0 0 rgba(0,0,0,0) inset
+		padding-left: 0
+		+placeholder(#08c)
+		&:hover
+			+placeholder(darken(#08c, 15%))
+			color: darken(#08c, 15%)
