@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>История заказов</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/all.css" rel="stylesheet">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div class="document">
+			
+			<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<a href="#"><img class="logo" src="img/logo.png"></a>
+		</div>
+		<div class="col-md-6">
+			<div class="alert alert-success">
+				<strong>Важное сообщение</strong>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</div>	
+		</div>
+		<div class="col-md-3">
+			<address>
+				<strong>Телефон:</strong>
+				+7 (123) 456-7890
+				<br>
+				<strong>Email:</strong>
+				<a href="mailto:#">first.last@gwc.ru</a>
+			</address>
+		</div>
+	</div>
+	<hr>
+</div>
+			<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="nav nav-pills nav-stacked">
+	
+	<li class="active">
+		<h4 class="ml15">Заявки</h4>
+		<!--<a class="disabled">Заявки</a>-->
+		<ul class="nav nav-pills nav-stacked">
+			<li>
+				<a href="cabinet-request-list.html">
+				<span class="badge pull-right">42</span>
+				Список заявок</a>
+			</li>
+			<li>
+				<a href="cabinet-request-create.html">Cоздать заявку</a>
+			</li>
+		</ul>
+	</li>
+	<hr>
+	<li class="active">
+		<h4 class="ml15">Счета</h4>
+		<!--<a class="disabled">Счета</a>-->
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="cabinet-invoice-create.html">Создать счет</a></li>
+			<li><a href="cabinet-invoice-paid.html">Оплаченные счета</a></li>
+			<li>
+				<a href="cabinet-invoice-unpaid.html">
+					<span class="badge pull-right">5</span>
+					Неоплаченые счета
+				</a>
+			</li>
+		</ul>		
+	</li>
+	<hr>
+	<li><a href="cabinet-history.html">История счетов</a></li>
+	<hr>
+	<li>
+		<a href="cabinet-contacts.html">
+			Контакты
+		</a>
+	</li>
+	<hr>
+</ul>
+
+		</div>
+		<div class="col-md-9">
+			<div class="title clearfix">
+				<h3>История счетов</h3>
+			</div>
+			<br>
+			<table class="table table-request-4 table-hover table-bordered table-striped table-responsive">
+				<thead>
+					<tr colspan="5">
+						<select class="form-control">
+							<option>За последний месяц</option>
+							<option>За квартал</option>
+						</select>
+					</tr>
+					<tr>
+						<th>#</th>
+						<th>Название заказа</th>
+						<th>Дата создания</th>
+						<th>Статус</th>
+						<th>Действие</th>
+					</tr>
+				</thead>		
+				<tbody>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>1</td>
+						<td>Заказ 32</td>
+						<td>
+							13/12/2013
+							<span class="label label-warning"><i class="icon-time"></i> 3 дня</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>2</td>
+						<td>Заказ 33</td>
+						<td>
+							13/12/2013
+							<span class="label label-danger"><i class="icon-time"></i> 1 день</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>3</td>
+						<td>Заказ 33</td>
+						<td>
+							13/12/2013
+							<span class="label label-warning"><i class="icon-time"></i> 3 дня</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>4</td>
+						<td>Заказ 34</td>
+						<td>
+							13/12/2013
+							<span class="label label-danger"><i class="icon-time"></i> 1 день</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+					<tr rel="href" data-href="cabinet-request-modify.html">
+						<td>5</td>
+						<td>Заказ 35</td>
+						<td>
+							13/12/2013
+							<span class="label label-danger"><i class="icon-time"></i> 1 день</span>
+						</td>
+						<td>Счет оплачен, товар отгружен</td>
+						<td>
+							<a class="btn btn-success" data-toggle="tooltip" data-original-title="Повторить"><i class="icon-repeat"></i></a>
+							<a class="btn btn-primary" data-toggle="tooltip" data-original-title="Просмотр"><i class="icon-eye-open icon-large"></i></a>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<ul class="pagination pagination-sm pull-right">
+								<li><a href="#">«</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+						</td>
+					</tr>							
+				</tfoot>
+			</table>
+		</div>
+	</div>
+</div>
+			<div class="footer-padding"></div>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<hr>
+		<small>© 2013 GWC.RU. Авторские права защищены и охраняются законом. <a href="#">Пользовательское соглашение</a></small>
+		</div>
+	</div>
+</footer>
+	</body>
+	<!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.autosize.js"></script>
+	<script src="js/vendor/spinner.js"></script>
+	<script src="js/vendor/text-edit.js"></script>
+	<script src="js/vendor/bootbox.min.js"></script>
+	<script src="js/all.js"></script>
+</html>
